@@ -1,0 +1,12 @@
+en:
+  contact_mailer:
+    title: "New Contact"
+    subject_template: "New contact from %{name}"
+    text_body_template: |
+      name: %{name}
+      email: %{email}
+      message: %{message}
+
+  site_settings:
+    contact_form_include_name: "Include a name input in the contact form."
+    contact_form_include_message: "Include a message input in the contact form."

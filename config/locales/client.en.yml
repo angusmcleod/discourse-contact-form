@@ -1,0 +1,16 @@
+en:
+  js:
+    contact_form:
+      title: "Contact"
+      failed: "Contact details failed to send."
+      name:
+        label: "Name"
+        placeholder: "Your full name."
+      email:
+        label: "Email"
+        placeholder: "Your email."
+      message:
+        label: "Message"
+        placeholder: "Add a message."
+      submit: "Submit"
+      succeded: "Sent. We'll be in touch shortly."

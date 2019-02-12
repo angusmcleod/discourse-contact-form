@@ -1,0 +1,7 @@
+plugins:
+  contact_form_include_name:
+    default: true
+    client: true
+  contact_form_include_message:
+    default: true
+    client: true

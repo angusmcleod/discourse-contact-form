@@ -1,0 +1,39 @@
+<h3>{{d-icon "far-envelope"}} {{i18n 'about.contact'}}</h3>
+
+{{#if showName}}
+  <div class="input">
+    <label>{{i18n 'contact_form.name.label'}}</label>
+    {{text-field value=name
+                 placeholderKey='contact_form.name.placeholder'
+                 autocorrect="off"
+                 autocapitalize="off"}}
+  </div>
+{{/if}}
+
+<div class="input email">
+  <label>{{i18n 'contact_form.email.label'}}</label>
+  {{text-field value=email
+               placeholderKey='contact_form.email.placeholder'
+               autocorrect="off"
+               autocapitalize="off"}}
+  <div class="fail">{{emailValidationError}}</div>
+</div>
+
+{{#if showMessage}}
+  <div class="input message">
+    <label>{{i18n 'contact_form.message.label'}}</label>
+    {{textarea value=message
+               class="contact-message"
+               placeholder=(i18n 'contact_form.message.placeholder')}}
+  </div>
+{{/if}}
+
+{{d-button class='btn btn-primary'
+           disabled=submitDisabled
+           action="submitContact"
+           label='contact_form.submit'}}
+
+<div class="info">
+  {{conditional-loading-spinner condition=submitting size="small"}}
+  <span class="contact-result">{{contactResult}}</span>
+</div>

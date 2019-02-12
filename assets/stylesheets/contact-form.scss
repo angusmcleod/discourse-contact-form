@@ -1,0 +1,71 @@
+.contact-form-container {
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  text-align: left;
+  display: inline-block;
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  .input.message {
+    padding: 0;
+  }
+
+  input, .contact-message {
+    padding: 7px 10px;
+    width: 350px;
+  }
+
+  textarea.contact-message {
+    width: 350px;
+    box-sizing: border-box;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 0;
+  }
+
+  input {
+    line-height: 22px !important;
+    height: initial !important;
+  }
+
+  .input {
+    margin-bottom: 20px;
+
+    input {
+      margin-bottom: 0;
+    }
+
+    label {
+      font-size: 1em;
+
+      span {
+        margin-left: 2px;
+        color: $danger;
+      }
+    }
+
+    span {
+      margin: 5px 0;
+    }
+
+    .success {
+      color: $success;
+    }
+
+    .fail {
+      color: $danger;
+    }
+
+    &.email .fail {
+      margin: 5px 0;
+    }
+  }
+
+  .info {
+    display: inline-block;
+  }
+}
