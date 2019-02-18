@@ -2,7 +2,7 @@
 
 {{#if showName}}
   <div class="input">
-    <label>{{i18n 'contact_form.name.label'}}</label>
+    <label><span>{{i18n 'contact_form.name.label'}}</span><span>*</span></label>
     {{text-field value=name
                  placeholderKey='contact_form.name.placeholder'
                  autocorrect="off"
@@ -11,7 +11,7 @@
 {{/if}}
 
 <div class="input email">
-  <label>{{i18n 'contact_form.email.label'}}</label>
+  <label><span>{{i18n 'contact_form.email.label'}}</span><span>*</span></label>
   {{text-field value=email
                placeholderKey='contact_form.email.placeholder'
                autocorrect="off"
@@ -21,7 +21,7 @@
 
 {{#if showMessage}}
   <div class="input message">
-    <label>{{i18n 'contact_form.message.label'}}</label>
+    <label><span>{{i18n 'contact_form.message.label'}}</span><span>*</span></label>
     {{textarea value=message
                class="contact-message"
                placeholder=(i18n 'contact_form.message.placeholder')}}

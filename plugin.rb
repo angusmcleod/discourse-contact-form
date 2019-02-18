@@ -4,7 +4,8 @@
 # authors: Angus McLeod
 # url: https://github.com/angusmcleod/discourse-contact-form
 
-register_asset 'stylesheets/contact-form.scss'
+register_asset 'stylesheets/common/contact-form.scss'
+register_asset 'stylesheets/mobile/contact-form.scss', :mobile
 
 after_initialize do
   load File.expand_path('../jobs/contact_email.rb', __FILE__)
