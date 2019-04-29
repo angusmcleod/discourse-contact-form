@@ -16,7 +16,6 @@ export default Ember.Component.extend({
   didInsertElement() {
     Ember.run.scheduleOnce('afterRender', () => {
       $('section.about.contact').hide();
-      $('section.contact-form-container').appendTo('.contents.body-page');
     });
   },
 
